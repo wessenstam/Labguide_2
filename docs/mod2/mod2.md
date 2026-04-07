@@ -85,6 +85,9 @@ The most important parts are:
 
   *Image 20. The Layout tab of the CfE.*
 
+➔ Click the **Save and publish** button in the far top corner of the screen to activate the new icon, and any other settings you may have changed, for the plugin.
+
+
 Now that we have the plugin configured we are going to use it. Instead of taking over the website, we are going to use an Overlay tool that mimics like if we have the plugin intergrated in the website as discussed eaerlier in one of the notes (under more information).
 
 

@@ -26,13 +26,13 @@ As we cannot always take over a customers website in PoCs or demo's, a tool has 
 
 ![](../images/image026.png){ width=50% }
 
-  *Image 21. The installation section of the PLuG Overlay Manager.*
+  *Image 22. The installation section of the PLuG Overlay Manager.*
 
 ➔ Follow the steps as described in this section. The end result should be that there is a new icon shown in the Chrome (Chromium like) browser.
 
 ![](../images/image026a.png)
 
-  *Image 22. The new extension in the browser.*
+  *Image 23. The new extension in the browser.*
 
 Now that we have the extension installed, we need to configure it. This will be done in the next module.
 
