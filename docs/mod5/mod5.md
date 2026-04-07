@@ -1,144 +1,163 @@
-# Website Scrapping for Articles
+# Create Workflow for End-Users
 
-Now that there are some articles using different methodologies, we are going to test the tool that DevRev SEs use for scraping a website. The idea is to scrape Hastings’website and turn them into articles so they can be used to answer questions.
+Now that we have the minimum requirements (Agent and PLuG Overlay Manager) ready, we need to connect them to eachother when a conversation starts.
 
+**Objective**
 
-➔ Open a new tab in your browser and navigate to [https://devrev.community](https://devrev.community)
+Configure the Chrome Extension for the website of HastingsDirect.com.
 
-![](../images/image028.png)
+**What You Will Build**
 
-*Image 22\. Overview of tools on devrev.community.*
+* Configure the Extension so it can be showed on hastingsdirect.com website
 
-➔ Open the S.P.I.D.E.R. tool and notice that there is a Personal Access Token needed. 
+* Test the PLuG Overlay Manager
 
-![](../images/image029.png)
+**Exercise steps**
 
-*Image 23\. S.P.I.D.E.R. Pat key required.*
+## Export an existing workflow
 
-➔ Head back to DevRev environment and click **\< Settings** at the top of the navigation pane
+➔ Navigate to **Workflows**
 
-![](../images/image030.png)
+![](../images/image049.png)
 
-*Image 24\. Location of Settings.*
+  *Image 28. Location of the Workflows text.*  
 
-➔ Click the Initials and selects **Settings**.  
+➔ There should be one workflow shown; *Agent Playground workflow*
+
+![](../images/image050.png){ width=70% }
+
+  *Image 29. One workflow shown.*  
+
+➔ Hoover the mouse over the workflow and click it. This will open the details of the workflow.
+
+![](../images/image051.png){ width=80% }
+
+  *Image 30. The details of the workflow are shown.*  
+
+➔ Click the **Download** button (:octicons-download-16:) and save the file to a location you can remember as we need the downloaded JSON file in a few.
+
+## Import an existing workflow as JSON
+
+➔ Click the **+ Workflow** button in the top right corner.
+
+![](../images/image053.png)
+
+  *Image 31. Create workflow.*  
+
+➔ In the next screen, click the tile **Import Workflow Start with a pre-...**
+
+![](../images/image054.png)
+
+  *Image 32. Import workflow.*  
+
+➔ In the next screen, select the earlier downloaded JSON file.
+
+![](../images/image055.png)
+
+  *Image 33. Downloaded JSON workflow.*  
+
+➔ After the JSON file is uploaded you will see the following Canvas:
+
+![](../images/image056.png){ width=50% }
+
+  *Image 34. Uploaded workflow.*
+
+## Reconfigure the workflow
+
+➔ Click the name at the top of the screen and rename it to **Conversation Agent** and hit **Enter**.
+
+➔ Click the **Conversation** trigger node.
+
+![](../images/image067.png)
+
+  *Image 35. Conversation trigger node workflow.*  
+
+➔ In the screen that opens on the right hand side take these actions:
+
+1. Click the **:material-delete-outline: Clear** button.
+2. Click the **X** to the right of to the **When** text in the *Filter* section.
+
+Both actions are shown in the below screenshot with their respective action numbers.
+
+![](../images/image069.png){ width=50% }
+
+  *Image 36. Actions on the Trigger node.*  
+
+➔ Click the **Talk to Agent** node on the canvas.
+ 
+![](../images/image060.png)
+
+  *Image 37. Talk to Agent node in the workflow.*  
+
+!!! note "Remark"
+    If you don't see the canvas, use the two arrows pointing to the right to collapse the side pane.
+
+    ![](../images/image060a.png)
+
+    *Image 38. Collapse side pane.*  
+
+➔ In the side pane, click the **:material-delete-outline: Clean button** to remove the assigned Agent. We need to change it.
+
+![](../images/image064.png)
+
+  *Image 39. Actions on the Talk to Agent node.*  
+
+➔ Now click on the text **Add Agent**.
+
+![](../images/image065.png)
+
+  *Image 40. Add Agent field in the Talk to Agent node.*  
+
+➔ Select the **Agent number** that corresonds with the earlier created **Conversation Agent**.
+
+![](../images/image066.png)
+
+  *Image 41. Agent selection for the Talk to Agent node.*  
+
+➔ Click the **Validate** button in the top right corner
+
+![](../images/image057.png)
+
+  *Image 42. Validate the workflow.*  
+
+➔ If no issues rose that button will change into **Deploy** if it did, click it. If not, please rerun the steps to find the issue, or ask.
+
+![](../images/image058.png)
+
+  *Image 43. Deploy the workflow.* 
+
+➔ After deploy, use the breadcrumbs at the top to navigate back to Workflows. You should now see two workflows.
+
+![](../images/image059.png)
+
+  *Image 44. Two Workflows shown.*  
+
+## Optional changes
+
+It is possible to change the avatar of the workflow when it gets triggered, as well as it description.
+
+➔ Click in the top row to the left the **pencil (:octicons-pencil-16:)**, just left of the **+ Create new version** button.
+
+![](../images/image070.png)
+
+  *Image 45. Edit the workflow.* 
+
+➔ In the side bar you can change:
+
+1. Workflow title
+2. Workflow description
+3. Display name
+4. The avatar by clicking the **Pencil** in the *Display Image* section
+
+![](../images/image071.png)
+
+  *Image 46. Edit options for the workflow.* 
+
+➔ You can change these settings as you like. It would be in production a good idea to change the name and picture to be more destinct to mimic a human-being, or at least that the person in the conversation is talking to an AI solution and not just a chatbot.
+
+Now that we have the backend ready we can focus on the front-end where our End-Users are.
+
     
-![](../images/image031.png)
-
-*Image 25\. Location of Settings for PAT.*
-
-➔ Click **\+ New Token** in the *Personal access tokens* section. 
-
-![](../images/image032.png)
-
-*Image 26\. Create a PAT.*
-
-➔ Provide a meaningful name, click **Generate** and copy the PAT.
-
-![](../images/image033.png)
-
-*Image 27\. Generate a PAT.*
-
-➔ The message shows that it can be seen only **once**. Make sure to store it somewhere where it can be reused when needed.
-
-![](../images/image034.png)
-
-*Image 28\. Copy generated PAT.*
-
-➔ Head back to the S.P.I.D.E.R. UI and copy the PAT key, and click **Initialize** **Connection**. Three parameters have to be filled:
-
-1. The URL to crawl  
-2. What is the Target Part  
-3. How deep should links be followed?
-
-![](../images/image035.png)
-
-*Image 29\. S.P.I.D.E.R. UI .*
-
-➔ Use these parameters:
-
-1. **URL(s) to Crawl**: https://www.hastingsdirect.com   
-2. **Target Part**: Insurance (PROD-3)  
-3. **Depth**: leave default 4
-
-➔ Click **Start Crawling** button to start the crawl.
-
-![](../images/image036.png)
-
-*Image 29\. S.P.I.D.E.R. UI \- Running crawl session.*
-
-➔ Now that the crawler is running, click the job shown in the Crawler jobs and see the progress by clicking once every while the **Refresh** button in the Recent Articles section. The two articles that have been created earlier for the Insurance part are shown.
-
-![](../images/image037.png)
-
-*Image 30\. S.P.I.D.E.R. UI \- Job details crawl session.*
-
-
-!!! Example "Be aware"
-    The process will take approx. 60 minutes for a full scrap as the site is quite large. In total approx. 300 pages will be pulled in as articles.  
-
-➔ Wait approx. 5 minutes before heading back to the DevRev instance. 
-
-### Organise Articles into Collections {#organise-articles-into-collections}
-
-➔ Back in your instance navigate to **Settings \-\> Knowledge Base** and see the articles that have been scrapped so far.  
-
-![](../images/image038.png)
-
-*Image 31\. Overview of created Articles.*
-
-➔ Click the **Collections** tab and read the description “Organize your articles into hierarchical folders, enhance structure with subfolders, and seamlessly categorize articles for optimal organization.”   
-![](../images/image039.png)
-
-*Image 32\. Collections creation.*
-
-➔ Create *two Collections* by clicking the **\+ Collection** button. For the first Collection use the following parameters:
-
-1. **Title:** IT related  
-2. **Description:** Helpdesk articles for IT related inquiries  
-3. **Publish Collection:** Active
-
-![](../images/image040.png)
-
-*Image 33\. Collection IT-Related creation.*
-
-➔ Click **Create**
-
-➔ For the second Collection use:
-
-1. **Title:** Insurance related  
-2. **Description:** Articles for Insurance related inquiries  
-3. **Publish Collection:** Active
-
-➔ Now that the two collections are created, articles need to be assigned to them.  
-
-![](../images/image041.png)
-
-*Image 34\. Assign articles to the Collections.*
-
-➔ Clicks the **\+ Add** text to the far right of the line that shows IT related and selects **Add article**  
-
-![](../images/image042.png)
-
-*Image 35\. Add an article to a Collection.*
-
-➔ In the new screen select the **Search** field and types *“Printer”* as we want that IT related article assigned to this collection. Only one item is shown. Select the checkbox and click **Add**
-
-![](../images/image043.png)
-
-*Image 36\. Add an article to a Collection.*
-
-➔ Repeat the earlier steps to Add articles to the collection, but make sure it is set to the **Insurance related** collection, leave the search field *empty*, check the checkbox of all articles that are shown and click **Add** to have them assigned.
-
-![](../images/image044.png)
-
-*Image 37\. Add articles to the Insurance related Collection.*  
-
-➔ After returning in the Collections overview, click the **\>** symbol shown just before the text of the collections. This will show the articles that have been assigned to the respective collections.
-
-![](../images/image045.png)
-
-*Image 38\. Collections and their assigned articles.*
 
 <hr>
 

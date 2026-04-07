@@ -73,9 +73,7 @@ nav:
   - Home: index.md
   - Create and configure Agent: mod1/mod1.md
   - Enable and configure Computer for End-Users: mod2/mod2.md
-  - Chrome Extension:
-    - Install Chrome Extension: mod3/mod3.md
-    - Configure Chrome Extension: mod4/mod4.md
+  - Chrome Extension: mod3/mod3.md
   - Create Workflow for End-Users: mod5/mod5.md
   - Run Workflow: 
     - Test using a conversation: mod6/mod6.md
