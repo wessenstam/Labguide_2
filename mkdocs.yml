@@ -72,7 +72,7 @@ extra_css:
 nav:
   - Home: index.md
   - Create and configure Agent: mod1/mod1.md
-  - Create and configure Computer for End-Users: mod2/mod2.md
+  - Enable and configure Computer for End-Users: mod2/mod2.md
   - Chrome Extension:
     - Install Chrome Extension: mod3/mod3.md
     - Configure Chrome Extension: mod4/mod4.md

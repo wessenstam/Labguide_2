@@ -1,21 +1,95 @@
 
-# Lab 1\. Introduction into Agentic Workflows {#lab-1.-introduction-into-agentic-workflows}
+# Create and configure Computer for End-Users
 
-This chapter will take you through an exercise to build articles for a knowledge base with which will be used by an AI agent to answer questions like a human.
+**Objective**  
+Configure the Computer for End-Users (PLuG in the UI) for conversations between End users and DevRev.
 
-## The use case {#the-use-case}
+**What you will build**
 
-ACME is an insurance broker for other organizations. They have a contract with Hastings. They have a project in which the end game is to find an AI driven solution that can answer support questions that normally consume a lot of time and bring almost no value. Examples are “How do I connect a printer to a Windows or Mac laptop”, “How do I map a network drive on my machine?”. The first task is for internal people and later on for their customers. 
+* Enable Computer for End-Users (CfE)
+* Configure CfE
 
-ACME is an organization that has internal IT, but at the same time is an insurance office that resells products from Hastings. Their Insurance department is asking for support on questions about insurance they resell. The department provides a SLA of 2 days for answering these questions. Most of them are related to "How can I….”. It would be great if the Agentic AI can also take care of most of those inquiries and therefore drop the workload, but also lower the time the department's SLA. 
+**Exercise steps**
 
-Following a demo at the DevRev Leadership Circle event, John's superiors were impressed by the platform's capabilities and identified it as the ideal solution for their specific use case. Consequently, John has been assigned to evaluate DevRev as a potential tool for the organization.
+➔ Navigate to **PLug Chat**
 
-## The problem with regular logic expression based workflows: {#the-problem-with-regular-logic-expression-based-workflows:}
+![](../images/image019.png)
 
-This workshop is describing the steps John takes to get to the first question:"How can I answer questions that are raised by internal employees. Insurance and IT related?”
+  *Image 14. Location of the PLuG text.*  
 
-## How we can solve this: {#how-we-can-solve-this:}
+➔ Click the **+ PLuG widget** button in the middle of the right pane.
 
-Incorporating an AI based workflow in an otherwise rigid set of steps allows us to bring in human-like answers in what would otherwise be complex coding, with a lot of matching logic.  
-Using dynamic inputs and outputs allows us to complete the call routing that would otherwise be done by a human (thus saving massive amounts of time).
+![](../images/image020.png)
+
+  *Image 15. Enable the PluG chat.*  
+
+➔ Now that the PLuG Chat has been enabled, we can change how the plugin will present it self on the customer's side. Default the **Configuration** tab will be selected as shown in below screenshot.
+
+![](../images/image021.png)
+
+  *Image 16. Configuration of the CfE.*  
+
+The most important parts are:
+
+1. **You unique app ID:** This is something we will need to use in a later module. It's used for identifying the APP for the CfE, that way it knows what backend to use.
+
+    !!! Abstract "More information"
+        At the top of the screen you see the default language of the plugin. This can be changed id needed, but will follow the UI language by default. One important item to remember is that the plugin itself will answer in the lnaguage the user is using for thier conversations. Not just English! The default language is more for the items that are shown to the end users. Like buttons that are not configurable with respect to language. Example is the "Search for articles" you see in the screenhost above on the right side.
+        
+        As DevRev is by default a multitenant organisation cloud solution, this ID is to make sure the plugin will be talking to the correct tenant. The plugin can be implemented by using 7 lines of code (javascript). More detailed information can be found [here](https://developer.devrev.ai/sdks/web/installation).
+
+2. **PLuG visibility:** You may want to restrict where the plugin is visible. Maybe just only when a user has logged in to the user specific information.
+3. **Start new conversation:** What should the text of the button to start the conversation be (the blue//purple button in the screenshot above "Send us a message").
+
+    !!! Tip
+        If you want to test any changes that are made and how they look like when deployed for the CfE, on the right hand side is an example of the settings. This also includes the other tabes that are going to be discussed.
+
+➔ Click the tab **Styiling** and will be presented with other options with respect to the styling of the plugin.
+
+![](../images/image022.png)
+
+  *Image 16. Styling of the CfE.*  
+
+➔ Here you can:
+
+1. What icon should the plugin be (we will change that in a few)?
+2. Where should the plugin show itself (default is right side in the bottom of the screen)?
+3. What should the logo be when the plugin shows itself?
+4. What is the theme color, dark or light and the highlight color for buttons etc.
+
+➔ In this screen we want to change the icon for the plugin. Click the **Upload** button and use [this image](../chatbot_logo.png) as the icon. 
+
+![](../images/image034.png)
+
+  *Image 17. THe downloaded image as Icon for the plugin.*  
+
+
+!!! Danger "Be Aware"
+    The link is to an image, download it and use the file browser window that opened after you clicked the **Upload** button. Select the downloaded image and click *Open* to upload it.
+
+➔ After you clicked *Open* you should see the below screenshot
+
+![](../images/image035.png)
+
+  *Image 18. The new icon of the CfE.*  
+
+➔ On the tab **Tabs** you see the tabs that are shown on the plugin when it opens. You can toggle some of the items and see the result in the Preview Pane on the far right. Bring all back to the default setting (all on).
+
+![](../images/image023.png)
+
+  *Image 19. The Tabs tab of the CfE.*
+
+➔ The last tab **Layout** you can change the options that are shown using toggle switches. Also try a few and see the result in the Preview Pane. Bring all back to the default setting (all on).
+
+![](../images/image024.png)
+
+  *Image 20. The Layout tab of the CfE.*
+
+Now that we have the plugin configured we are going to use it. Instead of taking over the website, we are going to use an Overlay tool that mimics like if we have the plugin intergrated in the website as discussed eaerlier in one of the notes (under more information).
+
+
+<hr>
+
+<font color="#FF6C0A" size="+2"><center><B>This concludes this module of the workshop</B></center></font>
+
+<hr>

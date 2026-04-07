@@ -1,99 +1,40 @@
-# Lab 1\. Exercise 1: Creating the Parts and Trials {#lab-1.-exercise-1:-creating-the-parts-and-trials}
+# Chrome Extension - Installation
 
 **Objective**  
-Create Parts and trials to assign KB articles to so they can be filtered later on in the lab. It also makes it possible to create have a relationship between the articles and human questions
+As we cannot always take over a customers website in PoCs or demo's, a tool has been created. The PluG Overlay Manager. This tool uses Javascript injection to mimic an implemented CfE.
 
 **What you will build**
 
-* Parts and Trials
+* Install the Chrome Extension
+
+!!! Danger "Be Aware"
+    For now there is no other browser extension available. This is a tool that has been created by the SE community of DevRev. If there is a newer version, or for an other browser, please visit the page again to see if there is an update. 
+  
+    Also as the extension is not in the extension store, updates have to be installed manually and will not be updated automatically
 
 **Exercise steps**
 
-- Log into your assigned lab environment.  
-- In the navigation pane, click the Expand button to see the full navigation pane  
+➔ Open a new browser tab and navigate to [https://devrev.community](https://devrev.community). Here you will see a lot of tools that can be used by you to help you prepare for a demo. The tool we are going to focus on is called **PLuG Overlay Manager**
 
-![](../images/image010.png)
+➔ Click **PLuG Overlay Manager**
 
-  *Image 5\. Expand the navigation pane.*  
-   
+![](../images/image025.png){ width=50% }
 
-➔ Click on Trials in the *Products* section. 
+  *Image 21. The tools at devrev.community.*
 
-![](../images/image011.png)
+➔ Scroll down and goto the *Installation* section.
 
-*Image 6.The Trials section.*
+![](../images/image026.png){ width=50% }
 
-➔  There is already a part called Product, but we need two others. Click the **\+** symbol, right of the Product text, to add  a Product Part. 
+  *Image 21. The installation section of the PLuG Overlay Manager.*
 
+➔ Follow the steps as described in this section. The end result should be that there is a new icon shown in the Chrome (Chromium like) browser.
 
+![](../images/image026a.png)
 
-![](../images/image012.png)
+  *Image 22. The new extension in the browser.*
 
-*Image 7\. Add a Part.*  
-
-➔  After the **\+** symbol is clicked in the screen that appears use the following parameters:
-
-1. Add Title: IT   
-2. Add Description here: IT related items
-
-![](../images/image013.png)
-
-*Image 8\. Provide the Title and Description of a Part.*
-
-➔  When done with this Part, click the **Create** button at the bottom right side of the screen. After the Part is created, collapse the screen by clicking the two arrows pointing right at the top of the folded out screen.
-
-![](../images/image014.png)
-
-*Image 9.Collapse side pane.*
-
-➔  As the **Default Product 1** Part is not needed, hoover over it, and click the hamburger icon (the three dots) and selects **Delete part**
-
-![](../images/image015.png)
-
-*Image 10\. Delete Part.*
-
-➔  During the deletion you will get a message that the system needs to reassign the existing items to another Part. In the dropdown box select the **IT** part and clicks **delete**.
-
-➔  Now you will only see the IT part 
-
-![](../images/image016.png)
-
-*Image 11\. Overview of Parts.*
-
-➔  As there is another Part to be created, create a new part called **Insurance** and use as description **All items that are related to insurances**. You will now see the two newly parts
-
-![](../images/image017.png)
-
-*Image 12\. Both Parts shown.*
-
-➔  As we want to have a sub category under *IT* called **Helpdesk**, click *IT*. The Capability screen appears. Next to the IT part click the **\+** symbol next to *Capability*.
-
-![](../images/image018.png)
-
-*Image 13\. Create Capability.*
-
-➔  In the expanded screen on the right side provide the following parameters:
-
-1. Add Title: Helpdesk  
-2. Add description: All items that are related to Helpdesk like tickets etc.
-
-➔  Click the create button to have the capability show up. 
-
----
-
-!!! tip "Remark"
-    Normally more will be created, based on the needs for filtering and reporting, but for now we leave it at this.  
-
----
-
-➔  The Trials screen now shows two *parts* Insurance and IT, the later has a *capability* called Helpdesk
-
-![](../images/image019.png)
-
-
-*Image 13\. End overview of Parts and Trials.*
-
-As the two Parts are now available, the next steps is to create Knowledge Base Articles. As these articles need to be assigned to a part, these objects have to be created before moving to the next step, creating Articles.
+Now that we have the extension installed, we need to configure it. This will be done in the next module.
 
 <hr>
 
