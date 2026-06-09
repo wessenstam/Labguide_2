@@ -10,7 +10,7 @@ Create an AI Agent that can be used for conversations between End users and DevR
 **Exercise steps**
 
 ➔ Log into your assigned lab environment.  
-➔ In the navigation pane, click **Settings**, via the gearwheel at the top of the screen (:material-cog:) navigate to **Agents**
+➔ In the navigation pane, click **Settings**, via the gearwheel at the top of the screen (:material-cog:) navigate to **Agent Studio**
 
 ![](../images/image004.png)
 
@@ -18,7 +18,7 @@ Create an AI Agent that can be used for conversations between End users and DevR
    
 ## Create the agent
 
-➔ Click **+ Agent Actions** in the top right corner to create a new agent. 
+➔ Click **Create new Agent** at the top to create a new agent, and select **CX Agent**. 
 
 ![](../images/image005.png)
 
@@ -27,29 +27,25 @@ Create an AI Agent that can be used for conversations between End users and DevR
 ➔ In the newly opened screen, use the following parameters:
 
   - **Agent name:** Conversation Agent
-  - **What do you want your...:** You are a support agent
+  - **Describe your agents...:** You are a support agent
 
 ![](../images/image006.png)
 
 *Image 3. First agent configuration.*
 
-➔ Click **Create agent** to have the agent created. You will be redirected to a new screen.
+➔ Click **Next** to have the agent created. You will be redirected to a new screen.
 
 ![](../images/image007.png)
 
-*Image 3. First agent configurated.*
+*Image 4. First agent configurated.*
 
 ## Configure the agent
 
-➔ Click the **Instructions** box at the top, just below the *CA icon*, this will open the prompt message for the agent, and click **Edit Instructions**.
+➔ Click in the **Instructions** Section, the text *Start adding your agents instructions here*.
 
-![](../images/image008.png)
+➔ *copy/paste* the below text into the screen.
 
-*Image 4. Change the agent instructions.*
-
-➔ Remove all text and *copy/paste* the below text into the screen.
-
-``` bash
+``` md
 You are an AI insurance support agent.
 
 Your role is to answer user questions strictly based on **local knowledge base articles** provided to you. These articles are your ONLY source of truth.
@@ -122,77 +118,54 @@ Always ensure responses are:
 
 ![](../images/image009.png)
 
-*Image 4. Instructions copied.*
+*Image 5. Instructions copied.*
 
-➔ When ready click the **Save changes** button to save the prompt.
-
-➔ Click the **Knowledge** box so we can provide knowledge to the agent
-
-![](../images/image010.png)
-
-*Image 5. Add knowledge to the agent.*
-
-➔ Click in the center of the screen the **+Add knowledge** button
+➔ In the *Knowledge* section, click the **+Add** button
 
 ![](../images/image011.png)
 
 *Image 6. Add knowledge to the agent.*
 
-➔ Click the **DevRev Icon** and only select the **Article** checkbox.
+➔ Click only the **Article** checkbox.
 
 ![](../images/image012.png){ width=40% } ![](../images/image013.png){ width=40% }
 
-*Image 6. Add Articles to the knowledge.*
+*Image 7. Add Articles to the knowledge.*
 
-➔ Click **Add knowledge**. Your agent should look like the below screenshot
+➔ Click **Add Knowledge**. 
+
+➔ Your agent should look like the below screenshot
 
 ![](../images/image014.png)
 
-*Image 7. Agent configuration.*
+*Image 8. Agent configuration.*
 
-### Change the avatar
-
-➔ Click the pencil (:octicons-pencil-16:) on the avatar as we want to change the icon of the agent.
-
-![](../images/image015.png)
-
-*Image 8. Agent avatar configuration.*
-
-➔ Click again on the pencil on the avatar
-
-![](../images/image016.png)
-
-*Image 9. Agent avatar configuration.*
-
-➔ A new file browser window will open, use [this icon](../insurance_agent-logo.png) as the avatar. Your screen should look like the below screenshot
-
-![](../images/image017.png)
-
-*Image 10. Agent new avatar configuration.*
-
-!!! Abstract "Be aware"
-    When you have clicked the URL, a png will be downloaded. Use that PNG as the avatar.
-    It should look like this:
-
-    ![](../insurance_agent-logo.png){ width=20% }
-
-    *Image 11. The new avatarfor the configuration.*
 
 ## Test the agent
 
-Now that we have the agent created and configured, we can test the agent using the Preview Pane that we have on the right hand side of the screen.
+Now that we have the agent created and configured, we can test the agent using two possible options:
 
-![](../images/image007.png){ width=50% }
+1. Click the **Test** Tab, next to the Build tap at the top of the screen
 
-*Image 12. The Preview Pane.*
+    ![](../images/image015.png)
 
-➔ In the Preview Pane, click the **Ask me anything** text and provide the following question: "*What are the motorcycle insurances?*"
+    *Image 9. The Preview Tab.*
+
+    When this option is used, click the **Start New Chat**
+
+1. On the right side of the svcreen click the play button
+
+    ![](../images/image016.png)
+
+    *Image 10. The Preview Tab.*
+
+➔ In either Preview Panes, click the **Ask you agent** text and provide the following question: "*What are the motorcycle insurances?*"
 
 ![](../images/image018.png){ width=30% }
 
-*Image 13. The agent's answer in the Preview Pane.*
+*Image 11. The agent's answer in the Preview Pane.*
 
-The agent is replying to the insurance related questons we ask in the Preview Pane. Now let's get to the next step, making this work for End-Users that don't have access to the DevRev UI.
+The agent is replying to the insurance related question we ask. Click the **Publish** button at the top right of the screen to start using the agent in the next step, making this work for End-Users that don't have access to the DevRev UI.
 
 
 
