@@ -1,9 +1,9 @@
 # Chrome Extension
 
-**Objective**  
+## **Objective**  
 As we cannot always take over a customers website in PoCs or demo's, a tool has been created. The PluG Overlay Manager. This tool uses Javascript injection to mimic an implemented CfE.
 
-**What you will build**
+## **What you will build**
 
 * Install the Chrome Extension
 
@@ -14,10 +14,9 @@ As we cannot always take over a customers website in PoCs or demo's, a tool has 
 
 * Configure the Chrome Extension for the website of HastingsDirect.com.
 
+## **Exercise steps**
 
-**Exercise steps**
-
-## Install the Extension
+### Install the Extension
 
 ➔ Open a new browser tab and navigate to [https://devrev.community](https://devrev.community). Here you will see a lot of tools that can be used by you to help you prepare for a demo. The tool we are going to focus on is called **PLuG Overlay Manager**
 
@@ -41,7 +40,7 @@ As we cannot always take over a customers website in PoCs or demo's, a tool has 
 
 Now that we have the extension installed, we need to configure it. This will be done in the next module.
 
-## Configure the Extension
+### Configure the Extension
 
 ➔ Right click the newly added extension in the browser and select **Options**.
 

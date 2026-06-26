@@ -1,13 +1,13 @@
-# Create and Confgure the Agent
+# Create and Configure the Agent
 
-**Objective**  
+## **Objective**  
 Create an AI Agent that can be used for conversations between End users and DevRev.
 
-**What you will build**
+## **What you will build**
 
 * Agent for conversations
 
-**Exercise steps**
+## **Exercise steps**
 
 ➔ Log into your assigned lab environment.  
 ➔ In the navigation pane, click **Settings**, via the gearwheel at the top of the screen (:material-cog:) navigate to **Agent Studio**
@@ -16,7 +16,7 @@ Create an AI Agent that can be used for conversations between End users and DevR
 
   *Image 1. Location of the Agents text.*  
    
-## Create the agent
+### Create the agent
 
 ➔ Click **Create new Agent** at the top to create a new agent, and select **CX Agent**. 
 
@@ -39,7 +39,7 @@ Create an AI Agent that can be used for conversations between End users and DevR
 
 *Image 4. First agent configurated.*
 
-## Configure the agent
+### Configure the agent
 
 ➔ Click in the **Instructions** Section, the text *Start adding your agents instructions here*.
 
@@ -141,7 +141,7 @@ Always ensure responses are:
 *Image 8. Agent configuration.*
 
 
-## Test the agent
+### Test the agent
 
 Now that we have the agent created and configured, we can test the agent using two possible options:
 
